@@ -1,15 +1,12 @@
-import java.util.Arrays;
+package domain;
 
 public class Main {
-
-    public static void main(String[] args) {
-        int [][] matrix = new int[3][3];
-        int x=0;
-
-        for(int[] row:matrix)
-            Arrays.fill(row,x);
-
-        for(int[] row:matrix)
-            System.out.println(Arrays.toString(row));
+    public static int Calc(int[] array1) {
+        int[] array = {15, 10, 47, 5, 10, 28};
+          int sum = 0;
+          for( int num : array) {
+              sum = sum + num;
+          }
+        return sum;
     }
 }
