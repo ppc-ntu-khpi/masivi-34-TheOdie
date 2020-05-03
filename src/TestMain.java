@@ -1,12 +1,22 @@
-package TestMain;
+package test;
 
-import domain.Main;
 import java.util.Arrays;
+import domain.Main;
 
-public class TestMain {
-    public static void main(String[] args) {
-        int[] array1 = {15, 10, 47, 5, 10, 28};
-        System.out.println(Arrays.toString(array1));
-        System.out.println(Main.Calc(array1));
-    }
+public class MainTest {
+	
+	public static void main(String[] args) {
+		
+		int array[][] = {
+						{6,8,10}, 
+						{3,4,5}
+						};
+		
+		for(int[] i:array) {
+			System.out.println(Arrays.toString(i));
+		}
+		
+        Main calc = new Main();
+        System.out.println("Sum of array elements = " + calc.Calculate(array));
+	}
 }
